@@ -1,0 +1,24 @@
+questions = ['Who is an author of Python', 'How is represnted boolean data type in Python', 'How much is 36+34']
+answers = ['Guido van Possum', 'bool', '70']
+
+
+print(f'Answer the  {len(questions)} questions, please.')
+input()
+
+score = 0
+for i in range(len(questions)):
+    answer_quizz = input(f'{questions[i]}  ')    
+    print()
+    if answer_quizz == answers[i]:
+        score +=1
+    else:
+        continue
+
+if score == len(questions):
+    print(f"Congrats! You are a winner. Your score is {score}")
+else:
+    print(f'Well done, guy! Your score is {score}')
+
+print()
+print('Keep your drive, see you!')
+print()
